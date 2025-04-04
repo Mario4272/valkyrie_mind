@@ -7,7 +7,10 @@ from queue import PriorityQueue
 from threading import Lock
 import asyncio
 
-from valkyrie_mind.valkyrie_mind.core.personality_subsystem import PersonalityCore
+from valkyrie_mind.cognitive_subsystems.personality_subsystem import PersonalityCore
+from valkyrie_mind.cognitive_subsystems.emotion_manager import EmotionManager
+from valkyrie_mind.cognitive_subsystems.relationship_memory import RelationshipMemory
+from valkyrie_mind.cognitive_subsystems.value_system import ValueSystem
 
 class CognitiveState(Enum):
     IDLE = "idle"
@@ -360,3 +363,20 @@ class MindSystem:
                 current_weight = self.system_weights[system]
                 new_weight = new_weights.get(system, current_weight)
                 self.system_weights[system] = current_weight * 0.8 + new_weight * 0.2
+
+
+
+    def perceive(self, input_data: dict) -> Dict[str, float]:
+        """Use personality to modulate perception based on input context."""
+        modulation = self.personality.get_response_modulation(input_data)
+        return modulation
+
+    def reflect(self) -> None:
+        """Allow the personality core to reflect and adjust trait preferences."""
+        self.personality.reflect_and_adjust()
+
+    def save_personality_state(self, path: str) -> None:
+        self.personality.save_state(path)
+
+    def load_personality_state(self, path: str) -> None:
+        self.personality.load_state(path)

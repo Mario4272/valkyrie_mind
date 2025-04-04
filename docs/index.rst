@@ -1,4 +1,4 @@
-Welcome to Odin-Mind's documentation!
+Welcome to valkyrie-Mind's documentation!
 ======================================
 
 .. toctree::
@@ -16,5 +16,5 @@ Welcome to Odin-Mind's documentation!
 Indices and tables
 ==================
 * :ref:`genindex`
-* :ref:`modindex`
+* :ref:`mvalkyriedex`
 * :ref:`search`

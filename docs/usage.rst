@@ -2,6 +2,6 @@
 Usage
 =====
 
-To use Odin-Mind in a project::
+To use valkyrie-Mind in a project::
 
-    import odin_mind
+    import valkyrie_mind

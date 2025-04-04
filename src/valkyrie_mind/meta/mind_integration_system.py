@@ -7,7 +7,7 @@ from queue import PriorityQueue
 from threading import Lock
 import asyncio
 
-from odin_mind.odin_mind.core.personality_subsystem import PersonalityCore
+from valkyrie_mind.valkyrie_mind.core.personality_subsystem import PersonalityCore
 
 class CognitiveState(Enum):
     IDLE = "idle"

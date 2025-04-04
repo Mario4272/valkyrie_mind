@@ -5,9 +5,9 @@ services:
     ports:
       - "11434:11434"
     networks:
-      - odin_network
+      - valkyrie_network
     volumes:
-      - ~/projects/odin_mind/llm/models:/app/llm/models
+      - ~/projects/valkyrie_mind/llm/models:/app/llm/models
     environment:
       - OLLAMA_HOST=0.0.0.0:11434
       - OLLAMA_DEBUG=false
@@ -21,7 +21,7 @@ services:
     environment:
       - OLLAMA_URL=http://llm:11434
     networks:
-      - odin_network
+      - valkyrie_network
     depends_on:
       - llm
     restart: unless-stopped
@@ -32,12 +32,12 @@ services:
     ports:
       - "7861:7861"
     networks:
-      - odin_network
+      - valkyrie_network
     depends_on:
       - llm
     restart: unless-stopped
 
 networks:
-  odin_network:
+  valkyrie_network:
     driver: bridge
-    name: odin_network  # Explicitly name the network to avoid prefixing issues
+    name: valkyrie_network  # Explicitly name the network to avoid prefixing issues

@@ -48,7 +48,7 @@ class OutputMetadata:
 @dataclass
 class OutputContent:
     data: Any
-    encoding: str = "utf-8"
+    encvalkyrieg: str = "utf-8"
     compression: Optional[str] = None
     encryption: Optional[str] = None
     schema_version: str = "1.0"

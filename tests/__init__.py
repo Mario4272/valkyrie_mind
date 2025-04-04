@@ -1,1 +1,1 @@
-"""Unit test package for odin_mind."""
+"""Unit test package for valkyrie_mind."""

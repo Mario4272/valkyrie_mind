@@ -1,11 +1,11 @@
 #!/usr/bin/env python
 
-"""Tests for `odin_mind` package."""
+"""Tests for `valkyrie_mind` package."""
 
 import pytest
 
 
-from odin_mind import odin_mind
+from valkyrie_mind import valkyrie_mind
 
 
 @pytest.fixture

@@ -7,7 +7,7 @@ from datetime import datetime
 import numpy as np
 from abc import ABC, abstractmethod
 
-from odin_mind.odin_mind.core.mind_integration_system import MindSystem
+from valkyrie_mind.valkyrie_mind.core.mind_integration_system import MindSystem
 
 class ContextType(Enum):
     ENVIRONMENTAL = "environmental"  # Physical environment

@@ -4,8 +4,8 @@ import sys
 import os
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
-from odin_mind.memory.perceptual_frame import PerceptualFrame
-from odin_mind.memory.valkyrie_graph import ValkyrieGraph
+from valkyrie_mind.memory.perceptual_frame import PerceptualFrame
+from valkyrie_mind.memory.valkyrie_graph import ValkyrieGraph
 
 # Create the graph
 graph = ValkyrieGraph()

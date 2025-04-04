@@ -4,7 +4,7 @@
 
 import pickle
 from typing import Dict, Optional, List
-from odin_mind.memory.perceptual_frame import PerceptualFrame
+from valkyrie_mind.memory.perceptual_frame import PerceptualFrame
 from datetime import datetime
 
 class ValkyrieGraph:

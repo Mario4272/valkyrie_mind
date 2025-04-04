@@ -1,16 +1,16 @@
 =========
-Odin-Mind
+valkyrie-Mind
 =========
 
 
-.. image:: https://img.shields.io/pypi/v/odin_mind.svg
-        :target: https://pypi.python.org/pypi/odin_mind
+.. image:: https://img.shields.io/pypi/v/valkyrie_mind.svg
+        :target: https://pypi.python.org/pypi/valkyrie_mind
 
-.. image:: https://img.shields.io/travis/Mario4272/odin_mind.svg
-        :target: https://travis-ci.com/Mario4272/odin_mind
+.. image:: https://img.shields.io/travis/Mario4272/valkyrie_mind.svg
+        :target: https://travis-ci.com/Mario4272/valkyrie_mind
 
-.. image:: https://readthedocs.org/projects/odin-mind/badge/?version=latest
-        :target: https://odin-mind.readthedocs.io/en/latest/?version=latest
+.. image:: https://readthedocs.org/projects/valkyrie-mind/badge/?version=latest
+        :target: https://valkyrie-mind.readthedocs.io/en/latest/?version=latest
         :alt: Documentation Status
 
 
@@ -20,7 +20,7 @@ Mario's Mind Project
 
 
 * Free software: MIT license
-* Documentation: https://odin-mind.readthedocs.io.
+* Documentation: https://valkyrie-mind.readthedocs.io.
 
 
 Features

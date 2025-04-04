@@ -25,8 +25,8 @@ def get_model_response(input_text):
             model_response = response_json.get("response", "Error: No response from model")
         except json.JSONDecodeError as e:
             # Log the error if we can't parse the response
-            print("Error decoding JSON:", e)
-            model_response = f"Error decoding JSON: {e}"
+            print("Error decvalkyrieg JSON:", e)
+            model_response = f"Error decvalkyrieg JSON: {e}"
 
         return model_response
 

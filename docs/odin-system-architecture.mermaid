@@ -1,0 +1,64 @@
+graph TD
+    %% Core System
+    Mind[Mind Integration System] --> Context[Context Management]
+    Mind --> Security[Security Layer]
+    Mind --> Memory[Memory System]
+    Mind --> Knowledge[Knowledge Base]
+    Mind --> ErrorMgmt[Error Management]
+    Mind --> SelfMon[Self Monitoring]
+    Mind --> Training[Training System]
+    Mind --> Validation[Validation System]
+
+    %% Memory System
+    Memory --> LTM[Long Term Memory]
+    Memory --> STM[Short Term Memory]
+    Memory --> ProcMem[Procedural Memory]
+    Memory --> EmoMem[Emotional Memory]
+    Memory --> RetEngine[Retrieval Engine]
+
+    %% Sensory Processing
+    Mind --> Sensory[Sensory System]
+    Sensory --> Visual[Visual Processor]
+    Sensory --> Auditory[Auditory Processor]
+    Sensory --> Tactile[Tactile Processor]
+    Sensory --> Olfactory[Olfactory Processor]
+    Sensory --> Gustatory[Gustatory Processor]
+
+    %% Output & Motor Control
+    Mind --> Output[Output Generation]
+    Mind --> Motor[Motor Control System]
+    Motor --> MotorMgr[Motor Manager]
+    Motor --> MotorSec[Secure Motor Control]
+
+    %% LLM Integration
+    Mind --> LLM[LLM Integration]
+    LLM --> PromptMgr[Prompt Manager]
+    LLM --> ResponseProc[Response Processor]
+    LLM --> Reasoning[Reasoning Engine]
+
+    %% Intuition System
+    Mind --> Intuition[Intuition System]
+    Intuition --> PatternRec[Pattern Recognition]
+    Intuition --> RapidAssess[Rapid Assessment]
+    Intuition --> InstinctMem[Instinctive Memory]
+
+    %% System Integration
+    Mind --> Integration[System Integration]
+    Integration --> MsgRouter[Message Router]
+    Integration --> StateManager[State Manager]
+    Integration --> CompRegistry[Component Registry]
+
+    %% Security System
+    Security --> SecMgr[Security Manager]
+    Security --> SecMon[Security Monitor]
+    Security --> AccessCtrl[Access Control]
+
+    %% Style Definitions
+    classDef core fill:#f9f,stroke:#333,stroke-width:2px
+    classDef system fill:#bbf,stroke:#333,stroke-width:1px
+    classDef subsystem fill:#ddf,stroke:#333,stroke-width:1px
+
+    %% Apply Styles
+    class Mind core
+    class Sensory,Memory,Knowledge,Security,Output,Motor,LLM,Intuition,Integration system
+    class Visual,Auditory,Tactile,Olfactory,Gustatory,LTM,STM,ProcMem,EmoMem,MotorMgr,PromptMgr,PatternRec subsystem

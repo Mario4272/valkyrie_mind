@@ -1,0 +1,17 @@
+# Ignore LLM models, cache, and large files
+llm/models/*
+llm/blobs/
+llm/manifests/
+llm/registry.ollama.ai/
+llm/cache/
+llm/outputs/
+llm/logs/
+llm/temp/
+
+# Ignore common junk files
+__pycache__/
+*.log
+.env
+.vscode/
+.DS_Store
+

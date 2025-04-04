@@ -1,0 +1,6 @@
+{
+  "python.defaultInterpreterPath": "/home/mf/.pyenv/versions/odin/bin/python",
+  "python.terminal.activateEnvironment": true,
+  "python.analysis.extraPaths": ["./src"],
+  "python.envFile": "${workspaceFolder}/.env"
+}
